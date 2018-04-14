@@ -26,6 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\app\components\shared\src\app\user.model.ts" />
     <None Remove="ClientApp\app\components\_directives\alert.component.ts" />
     <None Remove="ClientApp\app\components\_guards\auth.guard.ts" />
     <None Remove="ClientApp\app\components\_helpers\fake-backend.ts" />
@@ -37,7 +38,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ClientApp\app\components\loginform\" />
+    <TypeScriptCompile Include="ClientApp\app\components\shared\src\app\user.model.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ClientApp\app\components\login\" />
   </ItemGroup>
 
 
