@@ -26,25 +26,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="ClientApp\app\components\shared\src\app\user.model.ts" />
-    <None Remove="ClientApp\app\components\_directives\alert.component.ts" />
-    <None Remove="ClientApp\app\components\_guards\auth.guard.ts" />
-    <None Remove="ClientApp\app\components\_helpers\fake-backend.ts" />
-    <None Remove="ClientApp\app\components\_helpers\jwt.interceptor.ts" />
-  </ItemGroup>
-
-  <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.DotNet.Watcher.Tools" Version="2.0.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <TypeScriptCompile Include="ClientApp\app\components\shared\src\app\user.model.ts" />
+    <Folder Include="ClientApp\app\components\loginform\" />
   </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="ClientApp\app\components\login\" />
-  </ItemGroup>
-
 
   <Target Name="DebugRunWebpack" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('wwwroot\dist') ">
     <!-- Ensure Node.js is installed -->
