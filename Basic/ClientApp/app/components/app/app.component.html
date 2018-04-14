@@ -4,13 +4,13 @@
             <nav-menu></nav-menu>
         </div>
         <div class='col-sm-9 body-content'>
-            <router-outlet></router-outlet>
+            <router-outlet>
+
+            </router-outlet>
             <h1>Application says what?</h1>
             <ul>
                 <li *ngFor="let value of apiValues">{{value}}</li>
             </ul>
-           <login></login>
-
         </div>
         
     </div>

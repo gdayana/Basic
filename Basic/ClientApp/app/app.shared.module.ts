@@ -10,7 +10,6 @@ import { FetchDataComponent } from './components/fetchdata/fetchdata.component';
 import { CounterComponent } from './components/counter/counter.component';
 import { MaterialModule } from '@angular/material';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './components/login/login.component';
 
 const appRoutes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -26,7 +25,6 @@ const appRoutes: Routes = [
         NavMenuComponent,
         CounterComponent,
         FetchDataComponent,
-        LoginComponent,
         HomeComponent
     ],
     imports: [
